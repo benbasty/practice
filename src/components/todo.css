@@ -33,6 +33,12 @@ body {
     margin: 0.5rem;
     background-color: gold;
     cursor: pointer;
+    transition: 1s;
+}
+
+.TodoItemContainer:hover {
+    opacity: 0.7;
+    color: #000;
 }
 
 .TodoItemContainer.selected {
@@ -50,4 +56,11 @@ body {
     margin: 0.5rem;
     background-color:cornflowerblue;
     cursor: pointer;
+    transition: 1s;
+    margin-top: 3rem;
+}
+
+.deleteTodo:hover {
+    opacity: 0.7;
+    color: black;
 }

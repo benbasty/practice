@@ -11,13 +11,12 @@ function getClassName(selected) {
 
 // in the component here, we can remove the selected state variable.
 
-const TodoItem = ({todo}) => {
-    // const [selected, setSelected] = useState(false);
-    function clicked() {
-        // setSelected((value) => !value)
-    }
+const TodoItem = ({todo, onClick}) => {
   return (
-    <div className={getClassName(todo.selected)} onClick={clicked}>
+    <div className={
+        getClassName(todo.selected)}
+        onClick={() => onClick(todo.id)}
+    >
         <p className='todoTitle'>{todo.title}</p>
     </div>
   )
